@@ -56,3 +56,10 @@ ul.posts {
 ul.posts li {
   list-style: none;
 }
+
+p.publication {
+  font-size: .8em;
+  line-height: 1.35em;
+  margin: 3px;
+  color: #636363;
+}
