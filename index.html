@@ -8,16 +8,16 @@ title: TSP Algorithm Selection
 <p>The <b>Travelling Salesperson Problem</b> (TSP) is arguably the most prominent NP-hard combinatorial optimisation problem. Given a set of n cities and pairwise distances between those, the objective in the TSP is to find the shortest round-trip or tour through all cities, i.e., a sequence in which every city is visited exactly once, the start and end cities are identical, and the total length of the tour is minimal. The Euclidean TSP has important applications, e.g., in the fabrication of printed circuit boards as well as in transportation and logistics. We aim at constructing an instance-based algorithm selection model in order to improve the current state-of-the-art solver.</p>
 
 <h2 id="people">People</h2>
-<p>This is joint work of researchers from the <a href="https://www.ubc.ca" alt="Visit the website of the University of British Columbia" target="_blank"> University of British Columbia</a> (UBC) in Canada and the <a href="https://www.uni-muenster.de/en/" target="_blank" alt="Visit the website of the University of Münster">University of Münster</a> in Germany.</p>
+<p>This is joint work of researchers from the <a href="https://www.ubc.ca" alt="Visit the website of the University of British Columbia" target="_blank"> University of British Columbia</a> (UBC) in Canada and the <a href="https://www.uni-muenster.de/en/" target="_blank" alt="Visit the website of the University of Muenster">University of Muenster</a> in Germany.</p>
 
 <ul>
-  <li><a href="http://erc.is/p/bossek" alt="Website of Jakob Bossek">Jakob Bossek</a>, Research Assistant (University of Münster, Germany)</li>
-  <li><a href="http://erc.is/p/kerschke" alt="Website of Pascal Kerschke">Pascal Kerschke</a>, Research Assistant (University of Münster, Germany)</li>
+  <li><a href="http://erc.is/p/bossek" alt="Website of Jakob Bossek">Jakob Bossek</a>, Research Assistant (University of Muenster, Germany)</li>
+  <li><a href="http://erc.is/p/kerschke" alt="Website of Pascal Kerschke">Pascal Kerschke</a>, Postdoctoral Researcher (University of Muenster, Germany)</li>
   </li>
-  <li><a href="http://erc.is/p/trautmann" alt="Website of Heike Trautmann">Heike Trautmann</a>, Professor (University of Münster, Germany)</li>
+  <li><a href="http://erc.is/p/trautmann" alt="Website of Heike Trautmann">Heike Trautmann</a>, Professor (University of Muenster, Germany)</li>
   </li>
   <li><a href="http://www.cs.ubc.ca/~larsko" alt="Website of Lars Kotthoff">Lars Kotthoff</a>, Postdoctoral Researcher (UBC, Canada)</li>
-  <li><a href="http://www.cs.ubc.ca/~hoos/" alt="Website of Holger Hoos">Holger Hoos</a>, Professor (UBC, Canada)</li>
+  <li><a href="http://www.cs.ubc.ca/~hoos/" alt="Website of Holger H. Hoos">Holger H. Hoos</a>, Professor (UBC, Canada)</li>
 </ul>
 
 <h2 id="software">Software</h2>
@@ -33,19 +33,62 @@ title: TSP Algorithm Selection
 
 <h3>Other software used</h3>
 
+<h4>TSP Optimization Algorithms</h4>
+
 <ul>
-  <li><b>MAOS TSP solver</b> [<a href="https://github.com/wiomax/MAOS- TSP" alt="View GitHub repository">GitHub</a>] The multiagent optimization system (MAOS) TSP solver.
-  <p class="publication">Xie, X.-F. and Liu, J. (2009). Multiagent Optimization System for Solving the Traveling Salesman Problem (TSP). Trans. Sys. Man Cyber. Part B, 39(2):489–502.</p></li>
-  <li><b>EAX TSP solver</b> [<a href="https://github.com/sugia/GA-for-TSP" alt="View GitHub repository">GitHub</a>] Genetic algorithm with a powerful edge assembly crossover (EAX) operator for solving the TSP.
-  <p class="publication">Nagata, Y. and Kobayashi, S. (2013). A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. INFORMS Journal on Computing, 25(2):346–363.</p></li>
-  <li><b>LKH TSP solver</b> [<a href="http://webhotel4.ruc.dk/~keld/research/LKH/" alt="Navigate to official website">Official website</a>] Helsgaun variant of the Lin-Kernighan heuristic.
-  <p class="publication">Helsgaun, K. (2009). General k-opt submoves for the LinKernighan TSP heuristic. Mathematical Programming Computation, 1(2-3):119–163.</p></li>
-  <li><b>R package tspmeta</b> [<a href="https://github.com/berndbischl/tspmeta" alt="View GitHub repository">GitHub</a>, <a href="https://CRAN.R- project.org/package=tspmeta" alt="Official release on CRAN">CRAN</a>] Instance feature calculation and evolutionary instance generation for the traveling salesman problem (<i>This is the predecessor of our R package <b>salesperson</b></i>).
-  <p class="publication">Mersmann, O., Bischl, B., Trautmann, H., Wagner, M., Bossek, J., and Neumann, F. (2013). A novel feature-based approach to characterize algorithm performance for the traveling salesperson problem. Annals of Mathematics and Artificial Intelligence, 69(2):151–182.</p></li>
-  <li><b>UBC feature calculation</b> [<a href="http://www.cs.ubc.ca/labs/beta/Projects/EPMs/TSP_features_UBC2012.tar.gz" alt="Direct download">Download</a>] C-code for the computation of the UBC feature set.
-  <p class="publication">Hutter, F., Xu, L., Hoos, H. H., and Leyton-Brown, K. (2014). Algorithm runtime prediction: Methods & evaluation. Artificial Intelligence, 206(0):79 – 111.</p></li>
-  <li><b>Pihera &amp; Musliu feature calculation</b>[<a href="http://dbai.tuwien.ac.at/user/pihera/tsp/FeatureComputation_WIN.zip" alt="Direct download">Download 1</a>, <a href="http://dbai.tuwien.ac.at/user/pihera/tsp/tsp-feat.zip" alt="Direct download">Download 2</a>] C#-code for the computation of the feature set introduced by Pihera &amp; Musliu.
-  <p class="publication">Pihera, J. and Musliu, N. (2014). Application of machine learning to algorithm selection for TSP. In Fogel, D. et al., editors, Proceedings of the IEEE 26th International Conference on Tools with Artificial Intelligence (ICTAI). IEEE press.</p></li>
+  <li><b>Concorde</b> [<a href="http://www.math.uwaterloo.ca/tsp/concorde.html" alt="Navigate to official website">Official website</a>]</li>
+  <ul>
+    <li>state-of-the-art exact TSP solver</li>
+    <li><p class="publication">Applegate, David L. and Bixby, Robert E. and Chv&aacute;tal, Vasek and Cook, William J. (2007).<br>
+      The Traveling Salesman Problem: A Computational Study. Princeton University Press.</p></li>
+  </ul>
+  <li><b>EAX</b> [<a href="https://github.com/sugia/GA-for-TSP" alt="View GitHub repository">GitHub</a>]</li>
+  <ul>
+    <li>Genetic algorithm with a powerful edge assembly crossover (EAX) operator for solving the TSP.</li>
+    <li><p class="publication">Nagata, Yuichi and Kobayashi, Shigenobu (2013).<br>
+      A Powerful Genetic Algorithm Using Edge Assembly Crossover for the Traveling Salesman Problem.<br>
+      <em>INFORMS Journal on Computing</em>, 25(2):346-363. INFORMS.</p></li>
+  </ul>
+  <li><b>LKH</b> [<a href="http://webhotel4.ruc.dk/~keld/research/LKH/" alt="Navigate to official website">Official website</a>]</li>
+  <ul>
+    <li>Helsgaun's variant of the Lin-Kernighan heuristic (LKH).</li>
+    <li><p class="publication">Helsgaun, Keld (2009).<br>
+      General k-opt Submoves for the Lin-Kernighan TSP Heuristic.<br>
+      <em>Mathematical Programming Computation</em>, 1(2-3):119-163. Springer.</p></li>
+  </ul>
+  <li><b>MAOS</b> [<a href="https://github.com/wiomax/MAOS- TSP" alt="View GitHub repository">GitHub</a>]</li>
+  <ul>
+    <li>The multiagent optimization system (MAOS) TSP solver.</li>
+    <li><p class="publication">Xie, Xiao-Feng and Liu, Jiming (2009).<br>
+      Multiagent Optimization System for Solving the Traveling Salesman Problem (TSP).<br>
+      <em>IEEE Transactions on Systems, Man, and Cybernetics, Part B: Cybernetics</em>, 39(2):489-502. IEEE.</p></li>
+  </ul>
+</ul>
+
+<h4>TSP Feature Calculation</h4>
+  
+<ul>
+  <li><b>R package tspmeta</b> [<a href="https://github.com/berndbischl/tspmeta" alt="View GitHub repository">GitHub</a>, <a href="https://CRAN.R- project.org/package=tspmeta" alt="Official release on CRAN">CRAN</a>] </li>
+  <ul>
+    <li>Instance feature calculation and evolutionary instance generation for the traveling salesman problem (<i>This is the predecessor of our R package <b>salesperson</b></i>).</li>
+    <li><p class="publication">Mersmann, Olaf and Bischl, Bischl and Trautmann, Heike and Wagner, Markus and Bossek, Jakob and Neumann, Frank (2013).<br>
+      A Novel Feature-Based Approach to Characterize Algorithm Performance for the Traveling Salesperson Problem.<br>
+      <em>Annals of Mathematics and Artificial Intelligence</em>, 69(2):151-182. Springer.</p></li>
+  </ul>
+  <li><b>UBC feature calculation</b> [<a href="http://www.cs.ubc.ca/labs/beta/Projects/EPMs/TSP_features_UBC2012.tar.gz" alt="Direct download">Download</a>]</li>
+  <ul>
+    <li>C-code for the computation of the UBC feature set.</li>
+    <li><p class="publication">Hutter, Frank and Xu, Lin and Hoos, Holger H. and Leyton-Brown, Kevin (2014).<br>
+      Algorithm Runtime Prediction: Methods & Evaluation.<br>
+      <em>Artificial Intelligence</em>, 206(0):79 - 111. Elsevier.</p></li>
+  </ul>
+  <li><b>Pihera &amp; Musliu feature calculation</b>[<a href="http://dbai.tuwien.ac.at/user/pihera/tsp/FeatureComputation_WIN.zip" alt="Direct download">Download 1</a>, <a href="http://dbai.tuwien.ac.at/user/pihera/tsp/tsp-feat.zip" alt="Direct download">Download 2</a>]</li>
+  <ul>
+    <li>C#-code for the computation of the feature set introduced by Pihera and Musliu.</li>
+    <li><p class="publication">Pihera, Josef and Musliu, Nysret (2014).<br>
+      Application of Machine Learning to Algorithm Selection for TSP.<br>
+      <em>Proceedings of the IEEE 26th International Conference on Tools with Artificial Intelligence (ICTAI)</em>. IEEE Press.</p></li>
+  </ul>
 </ul>
 
 <h2 id="data">Data</h2>
@@ -60,5 +103,14 @@ In the following we provide data used in our <a href="#publications" alt="jump t
 <h2 id="publications">Publications</h2>
 
 <ul>
-  <li>Kotthoff, L., Kerschke, P., Hoos, H., & Trautmann, H. (2015). Improving the State of the Art in Inexact TSP Solving using Per-Instance Algorithm Selection. In Dhaenens, C., Jourdan, L., & Marmion, M.-E. (Eds.), <em>Learning and Intelligent Optimization, 9th International Conference</em> (pp. 202–217). Cham: Springer International Publishing.</li>
+  <li>Kerschke, Pascal and Kotthoff, Lars and Bossek, Jakob and Hoos, Holger H. and Trautmann, Heike (2017).<br>
+    Leveraging TSP Solver Complementarity through Machine Learning.<br>
+    <em>Evolutionary Computation Journal</em> (pp. 1-24). MIT Press.<br>
+    [<a href="https://www.mitpressjournals.org/doi/abs/10.1162/evco_a_00215" alt="View Publication">View Publication</a>]</li><br>
+  <li>Kotthoff, Lars and Kerschke, Pascal and Hoos, Holger H. and Trautmann, Heike (2015).<br>
+    Improving the State of the Art in Inexact TSP Solving using Per-Instance Algorithm Selection.<br>
+    Dhaenens, Clarisse and Jourdan, Laetitia and Marmion, Marie-El&eacute;onore (Eds.),<br>
+    <em>Learning and Intelligent Optimization, 9th International Conference</em> (pp. 202-217). Springer International Publishing.<br>
+    [<a href="https://link.springer.com/chapter/10.1007/978-3-319-19084-6_18" alt="View Publication">View Publication</a>, <a href="https://citation-needed.springer.com/v2/references/10.1007/978-3-319-19084-6_18?format=bibtex&flavour=citation" alt="BibTex">BibTex</a>]</li>
 </ul>
+
